@@ -1,0 +1,9 @@
+terraform-jenkins/.terraform/*
+terraform-jenkins/terraform.tfvars
+terraform-jenkins/terraform.tfstate
+terraform-jenkins/terraform.tfstate.backup
+
+terraform-nexus/.terraform/*
+terraform-nexus/terraform.tfvars
+terraform-nexus/terraform.tfstate
+terraform-nexus/terraform.tfstate.backup
