@@ -139,14 +139,14 @@ resource "azurerm_virtual_machine" "vm" {
 
   provisioner "file" {
     source      = "./scripts/jenkins_setup.sh"
-    destination = "/home/vmuser/jenkins_setup.sh"
+    destination = format("/home/%s/jenkins_setup.sh", var.admin_username) 
   }
 
   provisioner "remote-exec" {
     inline = [
-      "cd /home/vmuser",
+      "cd /home/$USER",
       "chmod +x jenkins_setup.sh",
-      "/bin/bash /home/vmuser/jenkins_setup.sh"
+      "/bin/bash /home/$USER/jenkins_setup.sh"
     ]
   }
 }

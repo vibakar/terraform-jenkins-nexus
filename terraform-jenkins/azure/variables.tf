@@ -1,16 +1,19 @@
 variable "global_id" {
   type        = string
   description = "Global ID for resource names"
+  default = "jenkins-test"
 }
 
 variable "location" {
   type        = string
   description = "Location of deployed resource"
+  default = "uksouth"
 }
 
 variable "public_domain_name" {
   type        = string
   description = "Name of the public domain"
+  default = "jenking-test"
 }
 
 variable "ssh_pub_key" {
@@ -47,4 +50,5 @@ variable "subscription_id" {
 variable "admin_username" {
   type        = string
   description = "Username of the admin on the VM"
+  default = "vmadmin"
 }
