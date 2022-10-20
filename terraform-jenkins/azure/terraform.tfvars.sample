@@ -1,0 +1,15 @@
+## Global Vars ##
+global_id          = "jenkins-test"
+location           = "uksouth"
+public_domain_name = "jekinsdev"
+admin_username     = "vmuser"
+
+## SSH Key Data
+ssh_pub_key     = "path/to/your/key"
+ssh_private_key = "path/to/your/key"
+
+## Service Principal Details ##
+client_id       = ""
+client_secret   = ""
+tenant_id       = ""
+subscription_id = """
